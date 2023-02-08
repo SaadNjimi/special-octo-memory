@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/API_func\.php$
+RewriteCond %{HTTP_REFERER} !^http://domain.com/ [NC]
+RewriteRule ^.*$ - [F,L]
